@@ -1,28 +1,28 @@
-class Funcionarios:
+class Funcionario:
 
     def __int__(self):
-        self.lista = []
         self.id
         self.nome
         self.setor
         self.salario
-        self.lista.append(self.id, self.nome, self.setor, self.salario)
 
     def criar_funcionario(self, nome, setor, salario):
         try:
             nome = str(nome)
             setor = str(setor)
             salario = float(salario)
+
         except:
             pass
         else:
             pass
 
 
-class Interface(Funcionarios):
+class Interface():
 
     def __init__(self):
         self.control = ''
+        self.funci = Funcionario()
 
     def loop(self):
         self.home()
